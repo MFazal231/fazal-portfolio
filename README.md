@@ -1,4 +1,4 @@
-# Mohammad Fazal — Portfolio
+# Mohammad Fazal - Portfolio
 
 Personal portfolio site built to showcase my projects, skills, and journey as a full-stack developer and founder.
 
