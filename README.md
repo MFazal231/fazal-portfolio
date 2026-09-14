@@ -1,32 +1,53 @@
-# React + TypeScript + Vite
+# Mohammad Fazal — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal portfolio site built to showcase my projects, skills, and journey as a full-stack developer and founder.
 
-Currently, two official plugins are available:
+**Live at [mfazal.tech](https://mfazal.tech)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vite.dev/) for tooling and dev server
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+- [Framer Motion](https://motion.dev/) for animations
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+- Responsive, single-page layout with dark/light theme toggle
+- Scroll-based animations: staggered reveals, 3D tilt cards, animated count-up stats, sliding nav indicator, and a scroll-progress bar
+- Sections covering skills, real projects (with live/GitHub links), experience, competitive programming, entrepreneurship, education, a learning-journey timeline, and a validated contact form
+- Downloadable resume
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Getting Started
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Then open [http://localhost:5174](http://localhost:5174).
+
+### Build
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+  components/   UI components, one per section (Hero, Projects, Timeline, etc.)
+  context/      Theme (dark/light) context
+  data/         Portfolio content (profile, skills, projects, experience, timeline)
+  App.tsx       Section composition
+  main.tsx      Entry point
+```
+
+Content lives in [`src/data/portfolio.ts`](src/data/portfolio.ts) — update it to change any text, links, or listed projects.
+
+## Contact
+
+- Email: [fazalmohammad231@gmail.com](mailto:fazalmohammad231@gmail.com)
+- GitHub: [@MFazal231](https://github.com/MFazal231)
+- LinkedIn: [mohammad-fazal](https://www.linkedin.com/in/mohammad-fazal/)
